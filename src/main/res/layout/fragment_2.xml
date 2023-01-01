@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:background="@drawable/bg_gradient"
+    tools:context=".Fragments.Profile">
+
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         >
+          <ImageView
+              android:layout_width="18dp"
+              android:src="@drawable/onlinedor"
+              android:layout_marginLeft="25dp"
+              android:layout_marginTop="22dp"
+              android:layout_height="18dp"
+              />
+          <TextView
+              android:id="@+id/nnameee"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="5dp"
+              android:layout_marginTop="18dp"
+              android:text="Name"
+              android:textColor="@color/white"
+              android:textSize="18sp"/>
+
+     </LinearLayout>
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Your Account"
+         android:layout_marginTop="60dp"
+         android:textStyle="bold"
+         android:textColor="@color/white"
+         android:layout_marginLeft="25dp"
+         android:textSize="18sp" />
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:layout_marginTop="10dp"
+         android:layout_marginStart="0dp"
+         >
+
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="15dp"
+              android:layout_marginTop="24dp"
+              android:layout_marginEnd="10dp"
+              android:scaleType="center"
+              android:src="@drawable/ic_baseline_call_24"
+              app:tint="@color/white"
+              />
+
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+               android:orientation="vertical"
+              android:layout_marginStart="20dp"
+               >
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Contact No"
+                   android:layout_marginTop="20dp"
+                   android:textColor="@color/white"
+                   android:textStyle="bold"
+                   android:textSize="15sp" />
+               <TextView
+                   android:id="@+id/no"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="+923495020267"
+                   android:layout_marginTop="00dp"
+                   android:textColor="@color/white"
+                   android:textSize="12sp" />
+
+          </LinearLayout>
+
+
+     </LinearLayout>
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:layout_marginTop="10dp"
+         android:layout_marginStart="0dp"
+
+         >
+
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="15dp"
+              android:layout_marginTop="24dp"
+              app:tint="@color/white"
+
+              android:layout_marginEnd="10dp"
+              android:scaleType="center"
+              android:src="@drawable/ic_baseline_my_location_24" />
+
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="20dp"
+              android:orientation="vertical"
+              >
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Location"
+                   android:layout_marginTop="20dp"
+                   android:textColor="@color/white"
+
+                   android:textSize="15sp" />
+               <TextView
+                   android:id="@+id/addresUser"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Current Location"
+                   android:layout_marginTop="00dp"
+                   android:textColor="@color/white"
+                   android:textSize="12sp" />
+          </LinearLayout>
+
+     </LinearLayout>
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:layout_marginTop="10dp"
+         android:layout_marginStart="0dp"
+         >
+
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="24dp"
+              android:layout_marginRight="10dp"
+              android:layout_marginStart="15dp"
+              android:scaleType="center"
+              app:tint="@color/white"
+
+              android:src="@drawable/ic_baseline_notifications_24"
+              />
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:layout_marginLeft="30dp"
+
+              >
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Notification"
+
+                   android:layout_marginTop="20dp"
+                   android:textColor="@color/white"
+                   android:textSize="15sp" />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="No new Notification"
+                   android:layout_marginTop="00dp"
+                   android:textColor="@color/white"
+                   android:textSize="12sp" />
+          </LinearLayout>
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="25dp"
+              android:layout_marginLeft="162dp"
+              app:tint="@color/white"
+
+              android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+              />
+     </LinearLayout>
+     <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Support"
+              android:layout_marginLeft="25dp"
+              android:textStyle="bold"
+
+              android:layout_marginTop="20dp"
+              android:textColor="@color/white"
+              android:textSize="18sp" />
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+
+         android:id="@+id/helprate"
+         android:orientation="horizontal"
+         android:layout_marginTop="10dp"
+         android:layout_marginStart="0dp"
+         >
+
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="15dp"
+              android:layout_marginTop="18dp"
+              android:layout_marginRight="10dp"
+              app:tint="@color/white"
+
+              android:scaleType="center"
+              android:src="@drawable/ic_baseline_help_outline_24" />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="30dp"
+
+              android:text="Help"
+              android:layout_marginTop="20dp"
+              android:textColor="@color/white"
+              android:textSize="12sp" />
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="15dp"
+              android:layout_marginLeft="240dp"
+              app:tint="@color/white"
+
+              android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+              />
+
+     </LinearLayout>
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:layout_marginTop="10dp"
+         android:layout_marginBottom="20dp"
+         android:id="@+id/ratingapp"
+
+         android:layout_marginStart="0dp"
+         >
+
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="16dp"
+              android:layout_marginRight="10dp"
+              android:layout_marginStart="15dp"
+              android:scaleType="center"
+              app:tint="@color/white"
+
+              android:src="@drawable/ic_baseline_star_rate_24"
+              />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Rate The App"
+              android:layout_marginLeft="30dp"
+
+              android:layout_marginTop="20dp"
+              android:textColor="@color/white"
+              android:textSize="12sp" />
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:tint="@color/white"
+              android:layout_marginTop="15dp"
+              android:layout_marginLeft="195dp"
+              android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+              />
+     </LinearLayout>
+     <View
+         android:id="@+id/view1"
+         android:layout_width="340dp"
+         android:layout_height="2dp"
+
+         android:layout_gravity="center_horizontal"
+         android:layout_below="@+id/od"
+         android:layout_marginTop="20dp"
+         android:background="#808080" />
+
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:layout_marginTop="10dp"
+         android:layout_marginStart="0dp"
+         >
+
+          <ImageView
+              android:layout_width="20dp"
+              android:layout_height="30dp"
+              android:layout_marginTop="16dp"
+              android:layout_marginRight="0dp"
+              android:layout_marginStart="20dp"
+              android:scaleType="fitCenter"
+              app:tint="@color/white"
+              android:src="@drawable/logout"
+              />
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Sign out"
+              android:layout_marginStart="30dp"
+              android:id="@+id/signout"
+              android:layout_marginTop="20dp"
+              android:textColor="@color/white"
+              android:textSize="15sp" />
+     </LinearLayout>
+
+</LinearLayout>

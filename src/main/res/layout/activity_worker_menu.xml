@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    tools:context=".Worker.WorkerMenu">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/WorkerFragemntMenu"
+        android:name="com.example.atyourservice.Worker.SelectWorker.Fragments.WorkerHome"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="800dp" />
+    <ImageButton
+        android:id="@+id/WorkerFragment1Home"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="70dp"
+        android:background="@color/transparent"
+        android:contentDescription="@string/home_icon"
+        android:scaleType="fitCenter"
+        android:src="@drawable/home" />
+
+
+    <ImageButton
+        android:id="@+id/WorkerFragment2Profile"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="80dp"
+        android:background="@color/transparent"
+        android:contentDescription="Home Icon"
+        android:scaleType="fitCenter"
+        android:src="@drawable/profile" />
+
+
+</RelativeLayout>

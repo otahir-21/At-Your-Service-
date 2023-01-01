@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    tools:context=".Fragments.Home">
+
+    <com.smarteist.autoimageslider.SliderView
+        android:id="@+id/image_slider"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="0dp"
+        android:scaleType="fitXY"
+        app:sliderAnimationDuration="1000"
+        app:sliderAutoCycleDirection="back_and_forth"
+        app:sliderAutoCycleEnabled="true"
+        app:sliderIndicatorAnimationDuration="100"
+        app:sliderIndicatorGravity="center_horizontal|bottom"
+        app:sliderIndicatorMargin="15dp"
+        app:sliderIndicatorOrientation="horizontal"
+        app:sliderIndicatorPadding="3dp"
+        app:sliderIndicatorRadius="2dp"
+        app:sliderIndicatorSelectedColor="#5A5A5A"
+        app:sliderIndicatorUnselectedColor="#FFF"
+        app:sliderScrollTimeInSec="3"
+        app:sliderStartAutoCycle="true" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_slider"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:background="#FFFFFF"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="20dp">
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="At Your Services"
+            android:textColor="#FF0000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:text="We Provide You With A Variety Of Home Services That Simplify Your Everyday Living"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/asdf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/plumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mnmn"
+            android:layout_marginStart="18dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/mnmn"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_below="@+id/asdf"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:elevation="5dp"
+                android:maxWidth="70dp"
+                android:maxHeight="70dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/plumberman"
+                android:transitionName="example_transition"
+                app:shapeAppearance="?attr/actionButtonStyle"
+                app:shapeAppearanceOverlay="@style/imageViewRounded"
+                app:strokeColor="@android:color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Plumber"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.imageview.ShapeableImageView
+
+                android:id="@+id/electrician"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+
+                android:layout_below="@+id/asdf"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:elevation="5dp"
+
+                android:maxWidth="70dp"
+                android:maxHeight="70dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/electriciannewuser"
+                android:transitionName="example_transition2"
+                app:shapeAppearance="?attr/actionButtonStyle"
+                app:shapeAppearanceOverlay="@style/imageViewRounded"
+                app:strokeColor="@android:color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Electrician"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/asdf"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.imageview.ShapeableImageView
+
+                android:id="@+id/AcService"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+
+                android:layout_below="@+id/asdf"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:elevation="5dp"
+
+                android:maxWidth="70dp"
+                android:maxHeight="70dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/acservicenew"
+                android:transitionName="example_transition3"
+                app:shapeAppearance="?attr/actionButtonStyle"
+                app:shapeAppearanceOverlay="@style/imageViewRounded"
+                app:strokeColor="@android:color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ac Service"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:id="@+id/car"
+            android:orientation="vertical">
+
+            <com.google.android.material.imageview.ShapeableImageView
+
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/asdf"
+                android:id="@+id/Carwash"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_baseline_add_24"
+                android:transitionName="example_transition4"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:elevation="5dp"
+                android:maxWidth="70dp"
+                android:maxHeight="70dp"
+                app:tint="@color/white"
+                app:shapeAppearance="?attr/actionButtonStyle"
+                app:shapeAppearanceOverlay="@style/imageViewRounded"
+                app:strokeColor="@android:color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

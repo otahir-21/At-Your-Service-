@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login.LoginActivity"
+    android:orientation="vertical"
+    android:background="@drawable/bg_gradient"
+    android:scaleType="center"
+    android:padding="20dp"
+    >
+
+    <ImageView
+        android:id="@+id/LogoImage"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:src="@drawable/flogo"
+        android:textAlignment="center">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/sign_in_to_continue"
+        android:textColor="@color/white"
+        android:textSize="17sp">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/username"
+                app:hintTextColor="@color/white"
+                android:textColorHint="@color/white"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Email"
+                >
+
+                <EditText
+                    android:id="@+id/Email"
+                    android:autofillHints="emailAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:inputType="textEmailAddress"
+
+                    >
+                </EditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="@string/password"
+            app:hintTextColor="@color/white"
+            android:textColorHint="@color/white"
+            app:passwordToggleEnabled="true"
+            >
+            <EditText
+                android:id="@+id/Password"
+                android:textColor="@color/white"
+                android:autofillHints="password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                >
+            </EditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radiogroup"
+            android:layout_marginTop="51dp"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:id="@+id/RadioUserL"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/user"
+                android:layout_marginTop="0dp"
+                android:textColor="@color/white"
+                android:checked="false"
+                android:textSize="15sp" />
+            <RadioButton
+                android:id="@+id/RadioWorkerL"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/worker"
+                android:layout_marginTop="0dp"
+                android:textColor="@color/white"
+
+                android:checked="false"
+                android:textSize="15sp" />
+            <RadioButton
+                android:id="@+id/RadioAdminL"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Admin"
+                android:layout_marginTop="0dp"
+                android:checked="false"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/forgetpassword"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@color/transparent"
+            android:elevation="0dp"
+            android:text="@string/forget_password"
+            android:textColor="@color/white"
+            android:layout_gravity="end"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/loginbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonshape"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:text="@string/sign_up"
+            android:textColor="@color/white" />
+        <Button
+            android:id="@+id/Signupbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/new_user_sign_up"
+            android:background="@color/transparent"
+            android:textColor="#fff"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            >
+        </Button>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
